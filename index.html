@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Statistical Consultancy</title>
+    <title>Statistical and Data Analytic Consultancy</title>
     <style>
         /* Base Styles */
         :root {
@@ -52,11 +52,11 @@
             display: flex;
             align-items: center;
         }
-        
         .logo {
-            height: 50px;
-            margin-right: 15px;
-        }
+            height: 240px;
+            width: auto;
+            margin-right: 20px;
+          }
         
         .site-title {
             font-size: 1.8rem;
@@ -324,8 +324,16 @@
         <div class="container header-container">
             <div class="logo-container">
                 <!-- Replace with your actual logo -->
-                <img src="/api/placeholder/200/50" alt="Your Logo" class="logo">
-                <h1 class="site-title">Your Statistical Consultancy</h1>
+                <img src="Logo4.png" alt="Logo" width="50" height="50" class="logo">
+               <h1 class="site-title">
+                <header>
+                   <h1> &sum; Statlytika </h1>
+                   <h3>Statistical and </h3>
+                   <h3> Data Analystical <h3>
+                   <h3>Consultancy</h3>
+              </header>
+                <h1 class="site-title">                      
+                 </h1>
             </div>
             <nav>
                 <ul>
@@ -342,8 +350,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Expert Statistical Consulting for Your Data Needs</h1>
-            <p>Transforming complex data into actionable insights for businesses and researchers</p>
+            <h1>Expert Service and Consultation for Your Data Analytical Needs</h1>
+            <p>Transforming Complex Data into Evidence-Based Insights for Decisive Actions, Sustainable Growth and Excellence
+            </p>
             <a href="#contact" class="btn">Get in Touch</a>
         </div>
     </section>
@@ -353,13 +362,14 @@
         <div class="container about-container">
             <div class="about-image">
                 <!-- Replace with your actual photo -->
-                <img src="/api/placeholder/400/400" alt="Your Profile Photo" class="profile-photo">
+                <img src="Priyantha_Wijayatunga_2023A.jpg" alt="Your Profile Photo" class="profile-photo">
             </div>
             <div class="about-text">
-                <h2 class="section-title">About Me</h2>
-                <p>Welcome to my statistical consultancy. I specialize in helping businesses and researchers make sense of their data through rigorous statistical analysis and clear interpretation.</p>
-                <p>With expertise in [mention your specialties, e.g., regression analysis, experimental design, survey methodology], I provide actionable insights that drive decision-making and solve complex problems.</p>
-                <p>My approach combines technical expertise with clear communication, ensuring that you not only get the answers you need but also understand how to apply them effectively.</p>
+                <h2 class="section-title">About Priyantha Wijayatunga</h2>
+                <p> I specialize in helping businesses and researchers make sense of their complex data through rigorous statistical modeling and analysis, and clear interpretation. With expertise in regression analysis, causal inference, experimental design, survival analysis, prediction, classification, probabilistic modeling, etc. I provide actionable insights that drive decision-making and solve complex problems.</p>
+                <p>My approach combines technical expertise with clear communication, ensuring that you not only get the answers you need but also understand how to apply them effectively. The knowledge I extract from your data creates intelligence and wisdom in your field of work, paving the way for sustainable growth and helping you thrive in competitive environments.</p>
+                <p> Partner with us and get our service to transform your raw data and information into strategic advantage and evidence-based decision-making power. </p>
+                <p> I obtained Ph.D. Degree in Mathematical and Computing Sciences specializing in Statistics and Data Science from the Tokyo Institute of Technology Tokyo Japan in  2007. Ever since I have been involving in statistical research, teaching, and doing analyses and consultancies for real world problems. </p>
             </div>
         </div>
     </section>
@@ -406,22 +416,180 @@
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-item">
                     <!-- Replace with your actual project image -->
-                    <img src="/api/placeholder/400/200" alt="Project 1" class="portfolio-image">
+                    <style>
+           /* Style the image */
+  
+    .popup-img {
+      cursor: pointer;
+      max-width: 200px;
+      margin: 10px;
+    }
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    /* Close Button */
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<!--Multiple Images -->
+<img iclass="popup-img" src="https://priyantha-wijayatunga.github.io/statlytika/Table1.png" alt="This is a sample image description. Click to enlarge." width="300">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+  <div id="caption"></div>
+</div>
+<script>
+  window.onload = function() {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("imgInModal");
+    var captionText = document.getElementById("caption");
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // Get all images with class "popup-img"
+    var images = document.querySelectorAll(".popup-img");
+
+    images.forEach(function(img) {
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    });
+  
+  // Close modal on 'X' click
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+ }
+</script>
                     <div class="portfolio-info">
-                        <h3>Market Analysis for Tech Startup</h3>
-                        <p>Conducted comprehensive statistical analysis of market trends to guide product development and marketing strategy.</p>
-                    </div>
-                </div>
+                        <h3>Predicting severe medical conditions of patients with traumatic brain injury</h3>
+                        <p>I have developed an effective and operational method to predict accurately,  rare or extreme events happening over time using multiple time series data. When it is needed to predict relatively rare events of elevated intracranial blood pressure (ICP) of patients with brain traumatic injuries within the next hour or so from their clinical condition of the last few hours, I developed a probabilistic model to do it with highest accuracy. The idea is not just to use raw data, but extract features from them, e.g., oscillation patterns, spikes, etc. in the selected time intervals of the past. Severe elevations of ICP, that are rare are difficult to predict with traditional prediction models such as neural networks, etc. So, I invented a novel method which calibrate and weigh predictive probabilities in order to select predictions. The method works in such a way that it gives enhanced predictions for the rare events of severe levels of ICP (the ICP level 2) while losing slightly prediction accuracy for normal levels of ICP (the ICP level 1), for the first to the sixth ten-minute time intervals into the future. The weighing of predictive probabilities is done in order to select predictions through minimizing a prediction error loss function that has different losses for different errors..</p>
+                        <p> The model is probabilistic therefore it can incorporate other information types as past ECG signal variation, respiration pattern, blood pressure variation, etc. of the patient. In fact, in this work no such extra knowledge could improve prediction accuracies. But my proposed method can be useful in other cases. This model can be used to predict stock market, exchange rate, interest rate, etc. prediction from multiple sources of data. And it is applicable for prediction of medical conditions of patients with clinical information over the time. And so on. </p>
+           </div>
+              </div>
                 
                 <!-- Portfolio Item 2 -->
                 <div class="portfolio-item">
-                    <!-- Replace with your actual project image -->
-                    <img src="/api/placeholder/400/200" alt="Project 2" class="portfolio-image">
-                    <div class="portfolio-info">
-                        <h3>Clinical Trial Data Analysis</h3>
-                        <p>Provided statistical support for a medical research team, including power analysis, randomization, and outcomes analysis.</p>
-                    </div>
-                </div>
+                    <!-- Replace with your actual project image for pop-up-->
+                      
+  <style>
+    /* Style the image */
+    #myImg {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    /* Close Button */
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Thumbnail image -->
+<img class="popup-img" src="https://priyantha-wijayatunga.github.io/statlytika/Grid1.png" alt="This is a sample image description. Click to enlarge." width="300">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+<script>
+  // Get elements
+  window.onload = function() {
+  var modal = document.getElementById("myModal");
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("imgModal");
+  var captionText = document.getElementById("caption");
+  var closeBtn = document.getElementsByClassName("close")[0];
+
+  // Show modal on image click
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt="2222"; // this must not be empty!
+  }
+
+  // Close modal on 'X' click
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+ }
+</script>
+
+                      <div class="portfolio-info">
+                        <h3>Efficient prediction of companies at risk</h3>
+                        <p> I have shown that when predictions are done where predicting some events that are minority are more important than the others that are the majority, probabilistic prediction models such as naive Bayesian networks can be constructed in such a way that we get higher prediction accuracies for important events while losing a little bit of prediction accuracy for unimportant events. My novel model (naiveB*) attained 92% accuracy of prediction for companies that are at risk of bankruptcy (EC=1) and 93% of accuracy of prediction for those are not at risk of bankruptcy at all (EC=3). All other models such as neural networks fail to attain such high prediction accuracies for the important events, but work well for unimportant events, which is not desired for investors and other business professionals. This model can be used to predict rare and important events of interest in many business, scientific, etc. contexts..</p>
+              </div>
+            </div>
                 
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-item">
@@ -443,9 +611,9 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <p>Ready to transform your data into insights? Get in touch to discuss how I can help with your statistical needs.</p>
-                    <p><strong>Email:</strong> your.email@example.com</p>
-                    <p><strong>Phone:</strong> (123) 456-7890</p>
-                    <p><strong>Location:</strong> Your City, Country</p>
+                    <p><strong>Email:</strong> priyantha.wijayatunga@gmail.com</p>
+                    <p><strong>Phone:</strong>  +46(0)703254262</p>
+                    <p><strong>Location:</strong> Umeå, Sweden</p>
                 </div>
                 <div class="contact-form">
                     <form action="#" method="POST">
@@ -475,9 +643,9 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Your Statistical Consultancy. All rights reserved.</p>
+            <p>&copy; 2025 &sum; Statlytika Statistical and Data Analytical Consultancy. All rights reserved.</p>
             <div class="social-links">
-                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">https://www.linkedin.com/in/priyantha-wijayatunga-09b8b939/</a>
                 <a href="#" target="_blank">Twitter</a>
                 <a href="#" target="_blank">GitHub</a>
             </div>
